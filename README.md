@@ -1,11 +1,11 @@
 # CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL
 
-Source Code(MAVEN FILE)->
+<h2> Source Code(MAVEN FILE)</h2>
 
-MAIN
-________________________________________________________________________
-SQL FILE->
+● MAIN
 
-mysql-commands-insert values in tables
+<h2> SQL FILE</h2>
 
-mysql-Commands-Schema and Table formation
+● mysql-commands-insert values in tables
+
+● mysql-Commands-Schema and Table formation
