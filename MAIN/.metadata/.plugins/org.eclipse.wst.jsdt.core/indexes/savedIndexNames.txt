@@ -1,6 +1,0 @@
-INDEX VERSION 1.4+J:\1.cdac pune\Project+Miniproject+place details\3.main project\Githup uploaded\main project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1386438244.index
-2369907591.index
-1545536168.index
-3356983242.index
-1763935.index
