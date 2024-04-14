@@ -1,6 +1,6 @@
 # CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL
 
-- <h4> http://13.50.136.248:8080/CRM/Welcome.jsp<h4><br>
+- <h4>http://13.50.136.248:8080/CRM/<h4><br>
 
     
   ## CRM Application Overview:
