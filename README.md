@@ -55,9 +55,11 @@
 
 
 ## Prerequisites
-- Microsoft Windows [Version 10.0.19041.1415] / Ubuntu 22.04.4 LTS
+- Ubuntu 22.04.4 LTS Microsoft / Windows [Version 10.0.19041.1415] 
 - java 11.0.14
 - mysql  Ver 8.0.28
 - Apache Tomcat v9 server
 - mysql-connector-java-8.0.20.jar(Driver)
+
+## Running on Ubuntu
 
