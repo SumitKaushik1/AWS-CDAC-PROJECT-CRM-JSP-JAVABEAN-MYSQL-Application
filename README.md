@@ -151,3 +151,9 @@ ______________________________________________________________________________
 
   ## Entity-Relationship diagram.
    ![Screenshot (328019)](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL-Application/assets/110432346/35be2c6b-27c0-44ef-ab4b-87e3919f17fe)
+
+ ## Table Formation And Value Insertion
+   ### mysql-Commands-Schema and Table formation
+  - This folder contains SQL commands for table creation
+  ### my-sql commands-inserting values into Table
+  - This folder contains SQL commands for value insertion
