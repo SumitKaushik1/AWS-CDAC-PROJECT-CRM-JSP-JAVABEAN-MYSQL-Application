@@ -131,8 +131,6 @@ ______________________________________________________________________________
 
   login in mysql server
 
-   mysql secure intallaiton
-  
        mysql -u root -p
      
      
