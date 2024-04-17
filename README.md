@@ -99,6 +99,57 @@ In summary, our CRM application serves as a comprehensive solution for managing 
        ```sh
          systemctl start tomcat9
        ```
-         
        
+    install mysql-server
+
+       apt-get install mysql-server
+       
+    mysql secure intallaiton
+
+       mysql_secure_installation
+       
+   - following  instructions      
+     - would  you like to setup validate password plugin ?
+        - yes
+     - please enter 0= LOW ,1=MEDIUM and 2=STRONG:0
+        - 0
+        - and set the password
+     - Do you wish to continue with password provided?
+       - Y
+     - Remove anonymous users?
+       - y
+     - Disallow  root login remotely?
+       - y
+     - Remove test database and acccess to it ?
+       - n
+     - Reload privilages tables now?
+       - y
+
+______________________________________________________________________________
+
+
+
+  login in mysql server
+
+   mysql secure intallaiton
   
+       mysql -u root -p
+     
+     
+  - give password
+
+
+  Replace 'new_password' with the new password you want to set. 
+ 
+     ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+  
+  flush privileges to apply the changes immediately
+    
+     FLUSH PRIVILEGES;
+
+  Grants all privileges to the 'root' user from the 'localhost' hostname, and it includes the WITH GRANT OPTION to allow the user to grant privileges to other users.
+
+    GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+
+  ## Entity-Relationship diagram.
+   ![Screenshot (328019)](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL-Application/assets/110432346/35be2c6b-27c0-44ef-ab4b-87e3919f17fe)
