@@ -4,7 +4,7 @@
 ## CRM Application/CRM
 This folder contains the source code for the CRM Application.
    
-## Browser Link
+### Browser Link
 
 - <h4>http://13.50.136.248:8080/CRM/<h4><br>
 
@@ -153,7 +153,7 @@ ______________________________________________________________________________
 
     GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
-  ## Entity-Relationship diagram.
+  ### Entity-Relationship diagram.
    ![Screenshot (328019)](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL-Application/assets/110432346/35be2c6b-27c0-44ef-ab4b-87e3919f17fe)
 
  ## Table Formation And Value Insertion
