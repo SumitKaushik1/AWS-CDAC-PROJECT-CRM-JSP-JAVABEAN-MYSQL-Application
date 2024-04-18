@@ -1,5 +1,9 @@
 # CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL
 
+
+## CRM Application/CRM
+This folder contains the source code for the CRM Application.
+   
 ## Browser Link
 
 - <h4>http://13.50.136.248:8080/CRM/<h4><br>
@@ -159,6 +163,22 @@ ______________________________________________________________________________
   ### my-sql commands-inserting values into Table
   - This file contains SQL commands for value insertion
 
+## Mysql-Connector-Jar File
+  - This folder contains mysql-connector jar file
+ 
+      and move the 
+ - Open bash
+- Use the mv command to move the mysql connector jar  file to the lib directory of Apache Tomcat.
+  
+````sh
+  mv /path/to/your/mysql-connector-java-8.0.20 /usr/share/tomcat9/lib
+`````
+
+- Replace /path/to/your/project/ABC.war with the absolute path to your .war file
+
+```sh
+ mv /path/with/mysql-connector-java-8.0.20 /usr/share/tomcat9/lib
+```
 
 _________________________________________________________________________________________________________________________________________________________
 
@@ -175,7 +195,7 @@ ________________________________________________________________________________
 - Replace /path/to/your/project/ABC.war with the absolute path to your .war file
 
 ```sh
-mv "/path/with/special chars/ABC.war" /var/lib/tomcat9/webapps
+mv /path/with/special chars/ABC.war /var/lib/tomcat9/webapps
 ```
 
 ___________________________________________________________________________________________________________________________________________________________
