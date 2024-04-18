@@ -100,13 +100,13 @@ In summary, our CRM application serves as a comprehensive solution for managing 
          systemctl start tomcat9
        ```
        
-    install mysql-server
+      install mysql-server
 
-       apt-get install mysql-server
+          apt-get install mysql-server
        
-    mysql secure intallaiton
+      mysql secure intallaiton
 
-       mysql_secure_installation
+          mysql_secure_installation
        
    - following  instructions      
      - would  you like to setup validate password plugin ?
