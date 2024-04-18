@@ -166,7 +166,6 @@ ______________________________________________________________________________
 ## Mysql-Connector-Jar File
   - This folder contains mysql-connector jar file
  
-      and move the 
  - Open bash
 - Use the mv command to move the mysql connector jar  file to the lib directory of Apache Tomcat.
   
@@ -174,7 +173,7 @@ ______________________________________________________________________________
   mv /path/to/your/mysql-connector-java-8.0.20 /usr/share/tomcat9/lib
 `````
 
-- Replace /path/to/your/project/ABC.war with the absolute path to your .war file
+- Replace /path/to/your/mysql-connector-java-8.0.20 with the absolute path to your mysql connector jar file
 
 ```sh
  mv /path/with/mysql-connector-java-8.0.20 /usr/share/tomcat9/lib
