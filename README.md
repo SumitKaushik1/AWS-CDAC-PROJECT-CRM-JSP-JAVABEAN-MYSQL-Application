@@ -216,4 +216,5 @@ Note: The MySQL server login credentials must match the web project database log
   Open the browser and enter the following link: 
         
         localhost:8080/CRM/
-        
+
+  ## Running on Windows      
