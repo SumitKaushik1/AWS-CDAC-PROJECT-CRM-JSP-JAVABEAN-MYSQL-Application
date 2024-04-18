@@ -100,13 +100,13 @@ In summary, our CRM application serves as a comprehensive solution for managing 
          systemctl start tomcat9
        ```
        
-    install mysql-server
+      install mysql-server
 
-       apt-get install mysql-server
+          apt-get install mysql-server
        
-    mysql secure intallaiton
+      mysql secure intallaiton
 
-       mysql_secure_installation
+          mysql_secure_installation
        
    - following  instructions      
      - would  you like to setup validate password plugin ?
@@ -151,3 +151,50 @@ ______________________________________________________________________________
 
   ## Entity-Relationship diagram.
    ![Screenshot (328019)](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL-Application/assets/110432346/35be2c6b-27c0-44ef-ab4b-87e3919f17fe)
+
+ ## Table Formation And Value Insertion
+   - This folder contains SQL commands for table creation and insertion of values into those tables.
+   ### mysql-Commands-Schema and Table formation
+  - This file contains SQL commands for table creation
+  ### my-sql commands-inserting values into Table
+  - This file contains SQL commands for value insertion
+
+
+_________________________________________________________________________________________________________________________________________________________
+
+- Create .war file of your web dynamic project (Web Application)Ensure that you have built your web application project and generated the .war file.
+
+- Move .war file to the webapps folder of Apache Tomcat
+- Open a terminal.
+- Use the mv command to move the .war file to the webapps directory of Apache Tomcat.
+  
+````sh
+  mv /path/to/your/project/ABC.war /var/lib/tomcat9/webapps
+`````
+
+- Replace /path/to/your/project/ABC.war with the absolute path to your .war file
+
+```sh
+mv "/path/with/special chars/ABC.war" /var/lib/tomcat9/webapps
+```
+
+___________________________________________________________________________________________________________________________________________________________
+
+Note: The MySQL server login credentials must match the web project database login  credentials.
+
+   start mysql server 
+    
+       
+         systemctl start nysql
+      
+
+   Restart tomcat server 
+    
+       
+         systemctl restart tomcat9
+           
+       
+  Open the browser and enter the following link: 
+        
+        localhost:8080/CRM/
+        
