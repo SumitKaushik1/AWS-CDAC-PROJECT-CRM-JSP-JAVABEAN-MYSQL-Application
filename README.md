@@ -158,3 +158,43 @@ ______________________________________________________________________________
   - This file contains SQL commands for table creation
   ### my-sql commands-inserting values into Table
   - This file contains SQL commands for value insertion
+
+
+_________________________________________________________________________________________________________________________________________________________
+
+- Create .war file of your web dynamic project (Web Application)Ensure that you have built your web application project and generated the .war file.
+
+- Move .war file to the webapps folder of Apache Tomcat
+- Open a terminal.
+- Use the mv command to move the .war file to the webapps directory of Apache Tomcat.
+  
+````sh
+  mv /path/to/your/project/ABC.war /var/lib/tomcat9/webapps
+`````
+
+- Replace /path/to/your/project/ABC.war with the absolute path to your .war file
+
+```sh
+mv "/path/with/special chars/ABC.war" /var/lib/tomcat9/webapps
+```
+
+___________________________________________________________________________________________________________________________________________________________
+
+Note: The MySQL server login credentials must match the web project database login  credentials.
+
+   start mysql server 
+    
+       
+         systemctl start nysql
+      
+
+   Restart tomcat server 
+    
+       
+         systemctl restart tomcat9
+           
+       
+  Open the browser and enter the following link: 
+        
+        localhost:8080/CRM/
+        
