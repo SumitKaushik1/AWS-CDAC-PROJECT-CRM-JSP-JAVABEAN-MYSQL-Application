@@ -220,13 +220,17 @@ Note: The MySQL server login credentials must match the web project database log
 ____________________________________________________________________________________________________________________________
   ## Running on Windows      
 
-- Download  spring tool suite from below link
+- Download the Spring Tool Suite from the following link: 
   ``````sh
       https://spring.io/tools
   ``````
-- Extract jar file
-- go to folder sts-4.22.0.RELEASE
-- click on the SpringToolSuite4.exe file
-- enter folder location where CRM webdynamic project is there
-- click ok
-- 
+- Once downloaded, extract the JAR file.
+- Navigate to the folder named 'sts-4.22.0.RELEASE.'
+- Locate and run the 'SpringToolSuite4.exe' file.
+- When prompted, specify the directory where your CRM web dynamic project is located.
+- Proceed by clicking 'OK' 
+- After opening, access the Eclipse Marketplace within the Spring Tool Suite.
+- Install the following plugins from the Eclipse Marketplace:
+     - Eclipse Enterprise Java and Web Developer Tools version 3.33
+     - Eclipse Web Developer Tools version 3.33
+
