@@ -217,4 +217,16 @@ Note: The MySQL server login credentials must match the web project database log
         
         localhost:8080/CRM/
 
+____________________________________________________________________________________________________________________________
   ## Running on Windows      
+
+- Download  spring tool suite from below link
+  ``````sh
+      https://spring.io/tools
+  ``````
+- Extract jar file
+- gp to folder sts-4.22.0.RELEASE
+- click on the SpringToolSuite4.exe file
+- enter folder location where CRM webdynamic project is there
+- click ok
+- 
