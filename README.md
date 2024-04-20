@@ -225,6 +225,8 @@ ________________________________________________________________________________
       https://spring.io/tools
   ``````
 - Once downloaded, extract the JAR file.
+- Locate 'content' Zip archive file
+- extract the 'content' Zip archive file 
 - Navigate to the folder named 'sts-4.22.0.RELEASE.'
 - Locate and run the 'SpringToolSuite4.exe' file.
 - When prompted, specify the directory where your CRM web dynamic project is located.
