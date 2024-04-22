@@ -236,3 +236,10 @@ ________________________________________________________________________________
      - Eclipse Enterprise Java and Web Developer Tools version 3.33
      - Eclipse Web Developer Tools version 3.33
 
+- step to add the tomcat server to ide
+   - go to this website
+  ``````sh
+   https://tomcat.apache.org/download-90.cgi
+  ````````
+  - click on the 64-bit Windows zip (pgp, sha512)
+  - it will download the zip file 
