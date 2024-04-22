@@ -242,4 +242,41 @@ ________________________________________________________________________________
    https://tomcat.apache.org/download-90.cgi
   ````````
   - click on the 64-bit Windows zip (pgp, sha512)
-  - it will download the zip file 
+  - it will download the zip file
+ 
+ -  Download Apache Tomcat:
+- Visit the official Apache Tomcat website: https://tomcat.apache.org/download-90.cgi
+- Click on the "64-bit Windows zip (pgp, sha512)" link to download the zip file.
+- Extract the Zip File:
+- Once the download is complete, locate the downloaded zip file.
+- Extract the contents of the zip file to a desired location on your computer.
+- Open IDE:
+- Launch your preferred integrated development environment (IDE).
+- Navigate to Preferences:
+   - Click on the "Window" tab in the menu bar.
+   - Select "Preferences" from the dropdown menu.
+   - Configure Runtime Environment:
+   - In the search bar within Preferences, type "server" and press Enter.
+   - Click on "Runtime Environments" from the search results.
+   - Click on "Add" to configure a new runtime environment.
+   - Select "Apache Tomcat v9.0" from the list and click "Next."
+   - Browse to the location where Apache Tomcat v9.0 is installed, then click "OK."
+   - Apply the changes and close the Preferences window.
+- Show Server View:
+   - Again, click on the "Window" tab.
+   - Choose "Show View" and then click on "Servers."
+   - Add New Server:
+   - Right-click within the empty window of the Servers view.
+   - Navigate to "New" and select "Server."
+   - Choose "Apache" folder, then "Tomcat v9.0 Server."
+   - Click "Next."
+   - Select Projects:
+   - In the configuration wizard, all the projects inside the CRM folder should be listed.
+   - Select the CRM dynamic project.
+   - Click "Finish."
+- Run the Project:
+   - Go to the CRM dynamic project within your IDE.
+   - Right-click on the project.
+   - Choose "Run on Server."
+- Restart IDE:
+- Restart your IDE to ensure all changes take effect.
