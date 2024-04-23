@@ -218,7 +218,42 @@ Note: The MySQL server login credentials must match the web project database log
         localhost:8080/CRM/
 
 ____________________________________________________________________________________________________________________________
-  ## Running on Windows      
+  ## Running on Local  Window Machine    
+
+### Configuring MySQL
+ - Visit the  website
+  ````````sh
+   https://www.mysql.com/downloads/.
+ ````````
+ - Click on "MySQL Installer for Windows".
+ - Select version 8.0.36 and choose "Microsoft Windows" as the operating system.
+ - Click on the "Downloads" link next to "Windows (x86, 32-bit), MSI (285.3 M)Installer".
+ - Click on "No thanks, just start my download."
+ - After downloading, open the installer.
+ - In the setup type selection, choose "Custom".
+ - Click "Next".
+ - Select "MySQL Servers" under the product selection dropdown.
+ - Choose "MySQL Server 8.0" and drag it to the right side.
+ - Also, drag "Workbench" and "Shell".
+ - Click "Next" and proceed.
+ - In the accounts and roles tab, set the MySQL root password.
+ - Click "Next" to install.
+ - Add the location of MySQL to the classpath in the environment variables.
+ - Go to the start menu, type "services", and open "MySQL80".
+ - Right-click on it and select "Start". The server will start.
+ - Open CMD from the start menu.
+ - Type mysql -u root -p and enter the password.
+
+ ### Table Formation And Value Insertion
+   - This folder contains SQL commands for table creation and insertion of values into those tables.
+   #### mysql-Commands-Schema and Table formation
+  - This file contains SQL commands for table creation
+  #### my-sql commands-inserting values into Table
+  - This file contains SQL commands for value insertion
+
+
+
+### Configuring Spring Tool Suite
 
 - Download the Spring Tool Suite from the following link: 
   ``````sh
