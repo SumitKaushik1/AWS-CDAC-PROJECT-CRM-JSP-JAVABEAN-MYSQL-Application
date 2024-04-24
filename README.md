@@ -244,10 +244,13 @@ ________________________________________________________________________________
  - Open CMD from the start menu.
  - Type mysql -u root -p and enter the password.
 
- ### Table Formation And Value Insertion
+  <h3>Table Formation And Value Insertion</h3>
+  
    - This folder contains SQL commands for table creation and insertion of values into those tables.
+ 
    #### mysql-Commands-Schema and Table formation
   - This file contains SQL commands for table creation
+  
   #### my-sql commands-inserting values into Table
   - This file contains SQL commands for value insertion
 
