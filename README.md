@@ -225,6 +225,7 @@ ________________________________________________________________________________
   ````````sh
    https://www.mysql.com/downloads/.
  ````````
+ - click on "MySQL Community (GPL) Downloads"
  - Click on "MySQL Installer for Windows".
  - Select version 8.0.36 and choose "Microsoft Windows" as the operating system.
  - Click on the "Downloads" link next to "Windows (x86, 32-bit), MSI (285.3 M)Installer".
