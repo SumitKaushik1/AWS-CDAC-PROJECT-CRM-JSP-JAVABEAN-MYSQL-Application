@@ -301,6 +301,31 @@ ________________________________________________________________________________
    - Select "Apache Tomcat v9.0" from the list and click "Next."
    - Browse to the location where Apache Tomcat v9.0 is installed, then click "OK."
    - Apply the changes and close the Preferences window.
+- To integrate the MySQL Connector JAR file into your project, follow these steps:
+   - Locate the "MySQL Connector JAR File" This folder holds the MySQL Connector JAR file necessary for database connectivity.
+   - Clone and Copy the Folder: Clone this folder and copy the MySQL Connector JAR file from it.
+   - Paste in Tomcat Server's lib Folder: Navigate to the lib folder of your Apache Tomcat server. Typically, this folder resides at apache-tomcat-9.0.88\lib. Paste the MySQL Connector 
+     JAR file here.
+   - Paste in Project's lib Folder: Additionally, paste the MySQL Connector JAR file in the lib folder located at src -> main -> webapp -> WEB-INF of your project directory. 
+- Add the Tomcat server runtime libraries and webapp libraries
+
+  - To add the Tomcat server runtime libraries to a dynamic web project in Spring Tool Suite (STS), you can follow these steps:
+
+      - Open Your Project: Open your dynamic web project in Spring Tool Suite.
+      - Project Properties: Right-click on the project in the Project Explorer, then select "Properties" from the context menu.
+      - Java Build Path: In the Properties dialog, navigate to "Java Build Path" from the left-hand side menu.
+      - Libraries Tab: Click on the "Libraries" tab.
+      - click on the classpath
+      - Add Library: Click on the "Add Library..." button.
+      - Select Server Runtime: In the "Add Library" dialog, select "Server Runtime" and click "Next".
+      - Choose Tomcat: Select "Apache Tomcat" as the server runtime environment and click "Finish".
+      - Again  click on the classpath
+      - Add Library: Click on the "Add Library..." button.
+      - click on webApp libraries  and click "Next".
+      - Apply and Close: Click "Apply and Close" to apply the changes and close the Properties dialog.
+   
+
+ 
 - Show Server View:
    - Again, click on the "Window" tab.
    - Choose "Show View" and then click on "Servers."
@@ -320,17 +345,5 @@ ________________________________________________________________________________
 - Restart IDE:
 - Restart your IDE to ensure all changes take effect.
 
-### Add the Tomcat server runtime libraries
-
-- To add the Tomcat server runtime libraries to a dynamic web project in Spring Tool Suite (STS), you can follow these steps:
-
-   - Open Your Project: Open your dynamic web project in Spring Tool Suite.
-   - Project Properties: Right-click on the project in the Project Explorer, then select "Properties" from the context menu.
-   - Java Build Path: In the Properties dialog, navigate to "Java Build Path" from the left-hand side menu.
-   - Libraries Tab: Click on the "Libraries" tab.
-   - click on the classpath
-   - Add Library: Click on the "Add Library..." button.
-   - Select Server Runtime: In the "Add Library" dialog, select "Server Runtime" and click "Next".
-   - Choose Tomcat: Select "Apache Tomcat" as the server runtime environment and click "Finish".
-   - Apply and Close: Click "Apply and Close" to apply the changes and close the Properties dialog.
+  
 
