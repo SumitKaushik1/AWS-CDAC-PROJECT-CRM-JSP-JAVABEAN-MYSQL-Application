@@ -8,6 +8,13 @@ This folder contains the source code for the CRM Application.
 
 - <h4>http://13.50.136.248:8080/CRM/<h4><br>
 
+### Credentials 
+- login id - u1111111111
+- Login Role Id - r1111111111
+- First Name - sumit
+- Last Name - kaushik
+- Password - Sumit@123
+
 
 ## Features
 
