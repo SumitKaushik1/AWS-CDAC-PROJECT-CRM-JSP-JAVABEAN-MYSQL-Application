@@ -17,6 +17,7 @@ This folder contains the source code for the CRM Application.
 
 
 ## Features
+[screen-capture.webm](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL/assets/110432346/43750252-264c-4305-8d74-949c59417610)
 
   ### CRM Application Overview:
    
@@ -67,7 +68,7 @@ In summary, our CRM application serves as a comprehensive solution for managing 
 
 
 
-[screen-capture.webm](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL/assets/110432346/43750252-264c-4305-8d74-949c59417610)
+
 
 
 ## Prerequisites & Tech
