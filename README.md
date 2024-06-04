@@ -3,18 +3,21 @@
 ## Browser Link
 https://crmpro.us.to/
 
+## Login Credentials 
+- login id - u1111111111
+- Login Role Id - r1111111111
+- First Name - sumit
+- Last Name - kaushik
+- Password - Sumit@123
+
+
+
 ## CRM Application/CRM
 This folder contains the source code for the CRM Application.
    
 
 
 
-### Credentials 
-- login id - u1111111111
-- Login Role Id - r1111111111
-- First Name - sumit
-- Last Name - kaushik
-- Password - Sumit@123
 
 
 ## Features
