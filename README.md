@@ -6,7 +6,7 @@ This folder contains the source code for the CRM Application.
    
 ### Browser Link
 
-- <h4>http://13.50.136.248:8080/CRM/<h4><br>
+- <h4>crmpro.us.to<h4><br>
 
 ### Credentials 
 - login id - u1111111111
