@@ -82,6 +82,30 @@ In summary, our CRM application serves as a comprehensive solution for managing 
 - Apache Tomcat v9 server
 - mysql-connector-java-8.0.20.jar(Driver)
 
+## Setting Up an EC2 Instance On AWS 
+- Create an EC2 Instance:
+
+- Choose Ubuntu Server 24.04 as the Amazon Machine Image (AMI).
+- Select the t2.micro instance type (free tier eligible).
+- Generate a .pem key file (e.g., portfolio1.pem) for SSH access.
+- Launch the Instance:
+
+- Review your settings and click on Launch Instance.
+- Configure Security Group:
+
+- Go to the Security Group tab and add the following inbound rules:
+ - Type: HTTPS, Source Type: Custom, Source: 0.0.0.0/0, Description: For SSL certificate
+ - Type: HTTP, Source Type: Custom, Source: 0.0.0.0/0, Description: For Apache server
+ - Type: Custom TCP, Source Type: Custom, Source: 0.0.0.0/0, Port Range: 9100, Description: For Node Exporter
+ - Save the Security Group Rules.
+
+- Connecting to the EC2 Instance
+- Open Git Bash.
+- Type the following command to connect to your EC2 instance via SSH:
+  - eg ssh -i "port-folio1.pem" ubuntu@ec2-65-1-114-222.ap-south-1.compute.amazonaws.com
+
+
+
 ## Running on Ubuntu
  - open bash
     - follow commands
@@ -229,6 +253,36 @@ Note: The MySQL server login credentials must match the web project database log
         
         localhost:8080/CRM/
 
+
+ # Getting Free SSL Certificate 
+
+   `````` sh
+   sudo dpkg --configure -a
+   sudo apt-get install -f
+   sudo apt-get update
+   sudo apt-get install python3-update-manager update-manager-core
+   sudo apt-get dist-upgrade
+   sudo apt-get install certbot python3-certbot-apache
+   certbot --apache -d sumitkaushik.us.to
+   ````````
+
+   
+   - Certainly! Here's a refined version of your instruction:
+   
+   - Setting Up Email Permissions
+   - Provide the Email Address when prompted.
+   - Grant All Permissions by selecting "Yes" for each permission request.
+   - Confirm by selecting "Yes" whenever prompted.
+
+______________________________________________________________________________________________________________________________________________
+
+ - **This final command on terminal  restarts the Apache web server service again, now that your portfolio files are in the correct location. This ensures that Apache serves your portfolio correctly from its new location.**
+    `````sh
+     sudo systemctl restart apache2
+   `````
+
+
+
 ____________________________________________________________________________________________________________________________
   ## Running on Local  Window Machine    
 
@@ -357,5 +411,4 @@ ________________________________________________________________________________
 - Restart IDE:
 - Restart your IDE to ensure all changes take effect.
 
-  
-
+ 
