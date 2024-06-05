@@ -216,7 +216,7 @@ Note: The MySQL server login credentials must match the web project database log
    start mysql server 
     
        
-         systemctl start nysql
+         systemctl start mysql
       
 
    Restart tomcat server 
