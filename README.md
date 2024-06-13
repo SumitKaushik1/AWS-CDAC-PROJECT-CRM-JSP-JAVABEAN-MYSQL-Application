@@ -255,6 +255,18 @@ Note: The MySQL server login credentials must match the web project database log
         localhost:8080/CRM/
 ____________________________________________________________________________________________________________________
 # Redirect public ip address  directly to the web application
+
+- Run the following commands to install and enable the required Apache modules:
+``````sh
+sudo apt update
+sudo apt install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod rewrite
+``````
+
+- Configure Apache Virtual Host:
+
 - Navigate to the Apache Sites-Available Directory:
 
 `````ah
