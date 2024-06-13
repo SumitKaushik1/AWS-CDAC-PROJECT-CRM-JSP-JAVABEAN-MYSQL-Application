@@ -314,6 +314,8 @@ ________________________________________________________________________________
    - Wait for the image status to become available, refreshing as necessary.
    - Select the image and click on Launch to start a new EC2 instance.
 
+## now follow the steps in <h3>Setting Up an EC2 Instance On AWS </h3>
+
 ____________________________________________________________________________________________________________________________
   ## Running on Local  Window Machine    
 
