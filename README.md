@@ -87,7 +87,7 @@ In summary, our CRM application serves as a comprehensive solution for managing 
 
 - Choose Ubuntu Server 24.04 as the Amazon Machine Image (AMI).
 - Select the t2.micro instance type (free tier eligible).
-- Generate a .pem key file (e.g., portfolio1.pem) for SSH access.
+- Generate a .pem key file (e.g., window-demo.pem) for SSH access.
 - Launch the Instance:
 
 - Review your settings and click on Launch Instance.
@@ -96,6 +96,7 @@ In summary, our CRM application serves as a comprehensive solution for managing 
 - Go to the Security Group tab and add the following inbound rules:
  - Type: HTTPS, Source Type: Custom, Source: 0.0.0.0/0, Description: For SSL certificate
  - Type: HTTP, Source Type: Custom, Source: 0.0.0.0/0, Description: For Apache server
+ - Type: Custom TCP, Source Type: Custom, Source: 0.0.0.0/0, Port Range: 8080, Description: For tomcat server
  - Type: Custom TCP, Source Type: Custom, Source: 0.0.0.0/0, Port Range: 9100, Description: For Node Exporter
  - Save the Security Group Rules.
 
@@ -282,6 +283,36 @@ ________________________________________________________________________________
    `````
 
 
+
+# Migrate EC2 instance from one region to other region on AWS
+- Access the AWS EC2 Console:
+
+  - Go to the AWS EC2 Console.
+  - Navigate to the Europe (Stockholm) region (eu-north-1).
+  - Create an Image:
+     - Select the desired instance.
+     - Go to Actions -> Image and Templates -> Create Image.
+     - Set the Image name to window-demo.
+     - Set the Image description to window-demo.
+     - Enable No reboot by checking the box.
+     - Click on Create Image.
+
+ - Monitor AMI Creation:
+   - Go to the AMI console in AWS.
+   - Wait for the image status to become available, refreshing as necessary.
+ - Copy the Image:
+   - Once the window-demo image is available, select it.
+   - Go to Actions -> Copy Image.
+   - Set the AMI copy name to window-demo.
+   - Select the destination region as Asia Pacific (Mumbai) (ap-south-1).
+   - Ensure Copy tags is checked.
+   - Click on Copy Image.
+
+ - Launch the Instance in the Mumbai Region:
+   - Switch to the Mumbai region (ap-south-1) in AWS.
+   - Open the AMI console.
+   - Wait for the image status to become available, refreshing as necessary.
+   - Select the image and click on Launch to start a new EC2 instance.
 
 ____________________________________________________________________________________________________________________________
   ## Running on Local  Window Machine    
