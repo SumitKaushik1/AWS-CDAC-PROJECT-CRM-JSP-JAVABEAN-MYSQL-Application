@@ -253,7 +253,63 @@ Note: The MySQL server login credentials must match the web project database log
   Open the browser and enter the following link: 
         
         localhost:8080/CRM/
+____________________________________________________________________________________________________________________
+# Redirect public ip address  directly to the web application
+- Navigate to the Apache Sites-Available Directory:
 
+`````ah
+cd /etc/apache2/sites-available
+`````
+
+
+- Create a Configuration File:
+````sh
+touch ip_address.conf
+````
+- Open the Configuration File for Editing:
+
+````sh
+nano ip_address.conf
+````
+- Add the Following Lines to ip_address.conf:
+
+`````sh
+<VirtualHost *:80>
+    ServerName crmpro.us.to
+
+  
+
+    ProxyPass / http://localhost:8080/CRM/
+    ProxyPassReverse / http://localhost:8080/CRM/
+
+    ProxyPreserveHost On
+    # Ensure correct forwarding of cookies and returning the JSESSIONID to the user
+    Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+`````
+- Save and Exit the File:
+
+- Press Ctrl + O to save the file.
+- Press Enter to confirm.
+- Press Ctrl + X to exit the editor.
+- Restart the Apache2 and Tomcat Servers:
+
+````sh
+sudo systemctl restart tomcat
+sudo systemctl restart apache2
+````
+
+
+- These steps will configure a virtual host in Apache to proxy requests to a Tomcat server running on localhost. The ProxyPreserveHost On directive and the header modification ensure that the JSESSIONID is correctly forwarded to the user. Finally, the necessary services are restarted to apply the changes.
+    - ProxyPreserveHost On
+    - Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+
+
+
+_____________________________________________________________________________________________________________________
 
  # Getting Free SSL Certificate 
 
@@ -315,6 +371,9 @@ ________________________________________________________________________________
    - Select the image and click on Launch to start a new EC2 instance.
 
 ## now follow the steps in <h3>Setting Up an EC2 Instance On AWS </h3>
+
+
+
 
 ____________________________________________________________________________________________________________________________
   ## Running on Local  Window Machine    
