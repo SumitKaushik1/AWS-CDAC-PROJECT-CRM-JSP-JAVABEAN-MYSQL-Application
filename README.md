@@ -452,6 +452,7 @@ ________________________________________________________________________________
 ## now follow the steps in 
 <h3>Setting Up an EC2 Instance On AWS </h3>
 <h3>Redirect public ip address  directly to the web application</h3>
+<h3>Redirect domain name   directly to the web application</h3>
 <h3>Getting Free SSL Certificate</h3>
 
 
