@@ -16,10 +16,6 @@ https://crmpro.us.to/
 This folder contains the source code for the CRM Application.
    
 
-
-
-
-
 ## Features
 [screen-capture.webm](https://github.com/SumitKaushik1/CDAC-PROJECT-CRM-JSP-JAVABEAN-MYSQL/assets/110432346/43750252-264c-4305-8d74-949c59417610)
 
@@ -287,6 +283,72 @@ nano ip_address.conf
 
 `````sh
 <VirtualHost *:80>
+    ServerName 13.127.64.2
+
+  
+
+    ProxyPass / http://localhost:8080/CRM/
+    ProxyPassReverse / http://localhost:8080/CRM/
+
+    ProxyPreserveHost On
+    # Ensure correct forwarding of cookies and returning the JSESSIONID to the user
+    Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+`````
+- Save and Exit the File:
+
+- Press Ctrl + O to save the file.
+- Press Enter to confirm.
+- Press Ctrl + X to exit the editor.
+- Restart the Apache2 and Tomcat Servers:
+
+````sh
+sudo a2ensite ip_address.conf
+sudo systemctl restart tomcat9
+sudo systemctl restart apache2
+````
+
+
+- These steps will configure a virtual host in Apache to proxy requests to a Tomcat server running on localhost. The ProxyPreserveHost On directive and the header modification ensure that the JSESSIONID is correctly forwarded to the user. Finally, the necessary services are restarted to apply the changes.
+    - ProxyPreserveHost On
+    - Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+
+
+
+# Redirect domain name  directly to the web application
+- Run the following commands to install and enable the required Apache modules if it is already installed then no need:
+``````sh
+sudo apt update
+sudo apt install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod rewrite
+``````
+- Configure Apache Virtual Host:
+
+- Navigate to the Apache Sites-Available Directory:
+
+`````ah
+cd /etc/apache2/sites-available
+`````
+
+
+- Create a Configuration File:
+````sh
+touch your_domain.conf
+````
+- Open the Configuration File for Editing:
+
+````sh
+nano your_domain.conf
+````
+- Add the Following Lines to your_domain.conf:
+
+`````sh
+<VirtualHost *:80>
     ServerName crmpro.us.to
 
   
@@ -310,7 +372,8 @@ nano ip_address.conf
 - Restart the Apache2 and Tomcat Servers:
 
 ````sh
-sudo systemctl restart tomcat
+sudo a2ensite your_domain.conf
+sudo systemctl restart tomcat9
 sudo systemctl restart apache2
 ````
 
@@ -318,6 +381,10 @@ sudo systemctl restart apache2
 - These steps will configure a virtual host in Apache to proxy requests to a Tomcat server running on localhost. The ProxyPreserveHost On directive and the header modification ensure that the JSESSIONID is correctly forwarded to the user. Finally, the necessary services are restarted to apply the changes.
     - ProxyPreserveHost On
     - Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+
+
+
+
 
 
 
