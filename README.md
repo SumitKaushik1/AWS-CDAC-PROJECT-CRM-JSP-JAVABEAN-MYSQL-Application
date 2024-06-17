@@ -308,8 +308,9 @@ nano ip_address.conf
 
 ````sh
 sudo a2ensite ip_address.conf
-sudo systemctl restart tomcat9
+sudo systemctl reload apache2
 sudo systemctl restart apache2
+sudo systemctl restart tomcat9
 ````
 
 
@@ -465,10 +466,15 @@ ________________________________________________________________________________
 ## now follow the steps in 
 <h3>Setting Up an EC2 Instance On AWS </h3>
 <h3>Redirect public ip address  directly to the web application</h3>
-<h3>Redirect domain name   directly to the web application</h3>
-<h3>Getting Free SSL Certificate</h3>
-- it may happen it does not open(chrome) in one browser so check in another browser(edge)  
+<!--<h3>Redirect domain name   directly to the web application</h3>
+<h3>Getting Free SSL Certificate</h3>-->
 
+## Error - Web applicaion is not opening
+ it may happen it does not open(chrome) in one browser so check in another browser(edge)  
+
+## apache.service error 
+
+Sometimes, a .conf file contains syntax errors, such as missing IP addresses or domain names. These mistakes can lead to various errors when the configuration is applied.
 
 
 ____________________________________________________________________________________________________________________________
