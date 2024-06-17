@@ -374,8 +374,10 @@ nano your_domain.conf
 
 ````sh
 sudo a2ensite your_domain.conf
-sudo systemctl restart tomcat9
 sudo systemctl restart apache2
+sudo systemctl reload apache2
+sudo systemctl restart tomcat9
+
 ````
 
 
@@ -465,7 +467,7 @@ ________________________________________________________________________________
 <h3>Redirect public ip address  directly to the web application</h3>
 <h3>Redirect domain name   directly to the web application</h3>
 <h3>Getting Free SSL Certificate</h3>
-
+- it may happen it does not open(chrome) in one browser so check in another browser(edge)  
 
 
 
