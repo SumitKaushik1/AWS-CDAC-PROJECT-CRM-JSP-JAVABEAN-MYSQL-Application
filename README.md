@@ -91,6 +91,7 @@ In summary, our CRM application serves as a comprehensive solution for managing 
 
 - Go to the Security Group tab and add the following inbound rules:
  - Type: HTTPS, Source Type: Custom, Source: 0.0.0.0/0, Description: For SSL certificate
+   - Note: If you don't have an SSL certificate, avoid using port numbers associated with HTTPS (typically port 443). If HTTPS is enabled on a port and there's no SSL certificate, browsers will attempt to connect via HTTPS by default. If HTTPS is disabled, traffic defaults to HTTP instead. This is why it's important to configure ports accordingly based on your SSL certificate status to ensure traffic is routed correctly.
  - Type: HTTP, Source Type: Custom, Source: 0.0.0.0/0, Description: For Apache server
  - Type: Custom TCP, Source Type: Custom, Source: 0.0.0.0/0, Port Range: 8080, Description: For tomcat server
  - Type: Custom TCP, Source Type: Custom, Source: 0.0.0.0/0, Port Range: 9100, Description: For Node Exporter
@@ -409,6 +410,16 @@ ________________________________________________________________________________
    - Provide the Email Address when prompted.
    - Grant All Permissions by selecting "Yes" for each permission request.
    - Confirm by selecting "Yes" whenever prompted.
+
+- if you get this type of error 
+````sh
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for crmpro.uk.to
+An unexpected error occurred:
+There were too many requests of a given type :: Error creating new order :: too many certificates already issued for "uk.to". Retry after 2024-06-17T07:00:00Z: see https://letsencrypt.org/docs/rate-limits/
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details
+````
+- it means that you have to run the commands just after time it is mentioned 
 
 ______________________________________________________________________________________________________________________________________________
 
