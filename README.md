@@ -472,7 +472,7 @@ ________________________________________________________________________________
 ## Error - Web applicaion is not opening
  it may happen it does not open(chrome) in one browser so check in another browser(edge)  
 
-## apache.service error 
+## Error - apache.service 
 
 Sometimes, a .conf file contains syntax errors, such as missing IP addresses or domain names. These mistakes can lead to various errors when the configuration is applied.
 
