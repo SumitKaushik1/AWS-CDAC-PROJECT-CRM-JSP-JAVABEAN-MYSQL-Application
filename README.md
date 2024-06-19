@@ -385,7 +385,36 @@ sudo systemctl restart tomcat9
 - These steps will configure a virtual host in Apache to proxy requests to a Tomcat server running on localhost. The ProxyPreserveHost On directive and the header modification ensure that the JSESSIONID is correctly forwarded to the user. Finally, the necessary services are restarted to apply the changes.
     - ProxyPreserveHost On
     - Header edit Set-Cookie "^(.*)$" "$1; Path=/; HttpOnly"
+_____________________________________________________________________________________________________________________
 
+ # Getting Free Domain Name
+ - Open the Website: Navigate to FreeDNS.
+`````sh
+https://freedns.afraid.org
+`````
+- Register for a New Account:
+
+  - Click on the "Sign Up" button to create a new account.
+  - Fill in the required information, such as username, email, and password.
+  - Complete any verification steps, such as email confirmation, if prompted.
+  - Sign In:
+
+- Once registered, sign in to your account using your credentials.
+- Access the Registry:
+
+- After logging in, go to the "Registry" section.
+- Locate the right side bar and click on it.
+   - Choose a Domain Name:
+
+   - From the available options, choose any domain name you prefer.
+   - Create a Subdomain:
+
+   - Enter the name of your desired subdomain.
+   - Provide the IP address of your web application.
+   - Complete the CAPTCHA verification.
+   - Finalize:
+   
+   - Click "OK" to complete the process.
 
 
 
