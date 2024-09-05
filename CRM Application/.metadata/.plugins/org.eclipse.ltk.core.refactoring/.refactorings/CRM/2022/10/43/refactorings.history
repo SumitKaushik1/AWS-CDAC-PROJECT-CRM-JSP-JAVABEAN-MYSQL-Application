@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;daolayer.DaoImpleSales.java&apos; to &apos;DaoImpleSalesman.java&apos;&#x0D;&#x0A;- Original project: &apos;CRM&apos;&#x0D;&#x0A;- Original element: &apos;daolayer.DaoImpleSales.java&apos;&#x0D;&#x0A;- Renamed element: &apos;daolayer.DaoImpleSalesman.java&apos;" description="Rename compilation unit &apos;DaoImpleSales.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;daolayer{DaoImpleSales.java" name="DaoImpleSalesman.java" references="false" stamp="1665937900956" version="1.0"/>
+</session>
